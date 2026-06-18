@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Catálogo IPESA Pinturas</title>
+  <meta name="description" content="Catálogo interactivo IPESA Pinturas Hermosillo" />
+  <meta name="theme-color" content="#c90019" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="stylesheet" href="styles.css?v=responsive-final-2" />
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar">
+      <button class="iconBtn mobileOnly" id="menuBtn" aria-label="Abrir menú">☰</button>
+      <div class="brand"><b>IPESA</b><span>Catálogo interactivo</span></div>
+      <nav class="desktopNav" aria-label="Secciones principales">
+        <button data-page="1">Inicio</button><button data-page="3">Decorativa</button><button data-page="15">Ferretera</button><button data-page="21">Maderas</button><button data-page="27">Industrial</button><button data-page="34">Tintométrico</button><button data-page="35">Contacto</button>
+      </nav>
+      <button class="iconBtn" id="searchBtn" aria-label="Buscar">⌕</button>
+    </header>
+    <aside class="drawer" id="drawer" aria-label="Menú de secciones">
+      <div class="drawerHead">IPESA Pinturas</div>
+      <button data-page="1">🏠 Inicio</button><button data-page="3">🎨 Decorativa</button><button data-page="15">🔧 Ferretera</button><button data-page="21">🪵 Maderas</button><button data-page="27">🏭 Industrial</button><button data-page="34">🌈 Tintométrico</button><button data-page="35">📞 Contacto</button>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <section class="searchPanel" id="searchPanel"><input id="searchInput" placeholder="Buscar producto: Vinipesa, Realtek, Vulcan..." autocomplete="off" /><div id="results" class="results"></div></section>
+    <main class="layout">
+      <aside class="sidePanel desktopOnly">
+        <h3>Secciones</h3>
+        <button data-page="1">Inicio</button><button data-page="3">Decorativa</button><button data-page="15">Ferretera</button><button data-page="21">Maderas</button><button data-page="27">Industrial</button><button data-page="34">Tintométrico</button><button data-page="35">Contacto</button>
+        <div class="sideContact"><a href="https://wa.me/526622217500?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20productos%20IPESA." target="_blank" rel="noopener">WhatsApp</a><a href="tel:+526622217500">Llamar</a></div>
+      </aside>
+      <section class="viewer" id="viewer"><button class="nav prev" id="prevBtn" aria-label="Página anterior">‹</button><div class="pageWrap" id="pageWrap"><img id="pageImg" alt="Página del catálogo IPESA" draggable="false" /></div><button class="nav next" id="nextBtn" aria-label="Página siguiente">›</button></section>
+    </main>
+    <nav class="bottomNav mobileOnly"><button data-page="1">Inicio</button><button data-page="3">Decorativa</button><button data-page="15">Ferretera</button><button data-page="21">Maderas</button><button data-page="27">Industrial</button></nav>
+    <a class="whatsapp" href="https://wa.me/526622217500?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20productos%20IPESA." target="_blank" rel="noopener">WhatsApp</a>
+    <div class="actions"><a href="tel:+526622217500">Llamar</a><a href="mailto:periferico@pintacolor.com.mx">Correo</a><a href="https://www.facebook.com/search/top?q=IPESA%20Pinturas%20Hermosillo" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/ipesa.pinturas.hermosillo" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+<script src="app.js?v=responsive-final-2"></script>
+</body>
+</html>
